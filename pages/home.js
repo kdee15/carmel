@@ -28,7 +28,7 @@ export default function Home({ Page }) {
   const pageTitle = Page[0].fields.components[0].fields;
 
   return (
-    <div className="anchor" id="top">
+    <div className="anchor">
       <ComponentSimpleTitle contentModule={pageTitle} />
     </div>
   );
