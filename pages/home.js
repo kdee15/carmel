@@ -1,5 +1,7 @@
 import { createClient } from "contentful";
 import ComponentSimpleTitle from "../components/organisms/componentSimpleTitle/ComponentSimpleTitle";
+import Component2ColumnImageText from "../components/organisms/component2ColumnImageText/Component2ColumnImageText";
+import ComponentHeroBanner from "../components/blocks/componentHeroBanner/ComponentHeroBanner";
 const { C_SPACE_ID, C_DELIVERY_KEY } = require("../helpers/contentful-config");
 
 export async function getStaticProps(context) {
@@ -25,11 +27,24 @@ export async function getStaticProps(context) {
 }
 
 export default function Home({ Page }) {
-  const pageTitle = Page[0].fields.components[0].fields;
+  console.log("Page", Page);
+  const heroBanner = Page[0].fields.components[0].fields;
+  const handyMan = Page[0].fields.components[2].fields;
+  const lockSmith = Page[0].fields.components[3].fields;
+  const painting = Page[0].fields.components[4].fields;
+  const roofWork = Page[0].fields.components[5].fields;
+  const carpentry = Page[0].fields.components[6].fields;
+  const rennovations = Page[0].fields.components[7].fields;
 
   return (
     <div className="anchor">
-      <ComponentSimpleTitle contentModule={pageTitle} />
+      <ComponentHeroBanner contentModule={heroBanner} />
+      <Component2ColumnImageText contentModule={handyMan} />
+      <Component2ColumnImageText contentModule={lockSmith} />
+      <Component2ColumnImageText contentModule={painting} />
+      <Component2ColumnImageText contentModule={roofWork} />
+      <Component2ColumnImageText contentModule={carpentry} />
+      <Component2ColumnImageText contentModule={rennovations} />
     </div>
   );
 }
