@@ -1,0 +1,83 @@
+// MOLECULE [ BODY COPY COMPONENT ] ###################################################################################
+
+@import "scss/.base/module-index";
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++
+
+.oFooter {
+  padding: 30px 0 50px;
+  background-color: #888;
+}
+
+.oLogo {
+  .mImage {
+    max-width: 150px;
+    margin: 50px auto 0;
+    img {
+      box-shadow: 0 0 10px white;
+    }
+  }
+  .aTitle {
+    text-align: center;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.oBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .mText {
+    text-align: center;
+    margin: 30px auto;
+    a {
+      color: white;
+      font-weight: 600;
+      &:hover {
+        text-shadow: 0 0 8px #333;
+      }
+    }
+  }
+}
+
+.oWhatsapp {
+  .mImage {
+    max-width: 200px;
+    margin: 0 auto 20px;
+  }
+}
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. GRACEFUL DEGRADATION ++++++++++++++++++++++++++++++
+
+@media ($md-dn) {
+}
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++
+
+@media ($md-up) {
+}
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++
+
+@media ($md-up) {
+}
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++
+
+@media ($lg-up) {
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ########################################################################################################
