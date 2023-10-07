@@ -50,8 +50,8 @@ function ComponentHeroBanner({ contentModule }) {
             )}
           </figure>
         ) : null}
-        <h1>{title}</h1>
-        <h4>{subtitle}</h4>
+        <h1 className={`${classes.aTitle}`}>{title}</h1>
+        <h4 className={`${classes.aSubtitle}`}>{subtitle}</h4>
       </div>
       {backgroundColor ? (
         <div
