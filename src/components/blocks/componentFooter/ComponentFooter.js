@@ -1,6 +1,6 @@
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import classes from "./ComponentFooter.module.scss";
-import Image from "next/dist/client/image";
+import Image from "next/image";
 
 export default function ComponentFooter({ contentModule }) {
   const { title, logo, copy, whatsapp } = contentModule;

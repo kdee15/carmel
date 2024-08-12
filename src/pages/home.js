@@ -1,5 +1,4 @@
 import { createClient } from "contentful";
-import ComponentSimpleTitle from "../components/organisms/componentSimpleTitle/ComponentSimpleTitle";
 import Component2ColumnImageText from "../components/organisms/component2ColumnImageText/Component2ColumnImageText";
 import ComponentHeroBanner from "../components/blocks/componentHeroBanner/ComponentHeroBanner";
 import ComponentFooter from "../components/blocks/componentFooter/ComponentFooter";
