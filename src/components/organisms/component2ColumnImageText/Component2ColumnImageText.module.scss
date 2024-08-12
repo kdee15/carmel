@@ -1,6 +1,10 @@
 // COMPONENT [ TEXT IMAGE BLOCK ] #####################################################################################
 
-@import "scss/.base/module-index";
+// 0. MODULE IMPORTS ++++++++++++++++++++++++++++++++++++++
+
+@import "../../../scss/.base/_module-index";
+
+// 0. END +++++++++++++++++++++++++++++++++++++++++++++++++
 
 .oTextImageBlock {
   // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++
